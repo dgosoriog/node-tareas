@@ -1,3 +1,4 @@
+//Creacion de los comandos
 const descripcion = {
     demand: true,
     alias: 'd',
@@ -10,28 +11,20 @@ const completado = {
     desc: 'Marca como completado'
 };
 
-const borrado = {
-    demand: true,
-    alias: 'b',
-    desc: 'Borrar la tarea'
-};
-
 const argv = require('yargs')
     .command('crear', 'Crear una tarea', {
         descripcion
     })
-
-.command('actualizar', 'Actualizar una tarea', {
+    .command('actualizar', 'Actualiza una tarea', {
         descripcion,
         completado
-
     })
-    .command('borrar', 'Borrar una tarea', {
+    .command('borrar', 'Elimina una tarea', {
         descripcion
-
     })
     .help()
     .argv;
+
 module.exports = {
     argv
 }
