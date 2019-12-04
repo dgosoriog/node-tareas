@@ -1,7 +1,9 @@
+//Importar los paquetes y el modulo tareas-por-hacer
 const argv = require('./config/yargs').argv;
 const tareas = require('./controlador/tareas-por-hacer');
 const colors = require('colors');
 let comando = argv._[0];
+//Menu de opciones.En cada opcion se llama a las correspondientes funciones creadas en tareas-por-hacer
 switch (comando) {
     case 'crear':
         let tarea = tareas.crear(argv.descripcion);
