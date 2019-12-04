@@ -5,7 +5,7 @@ const descripcion = {
 }
 
 const completado = {
-    demand: true,
+    default: true,
     alias: 'c',
     desc: 'Marca como completado'
 };
