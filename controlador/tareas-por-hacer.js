@@ -44,12 +44,6 @@ const borrar = (descripcion) => {
         guardarDB();
         return true;
     }
-    //let index = tareasPorHacer.findIndex(tarea => tarea.descripcion === descripcion);
-    //if (index >= 0) {
-    //    tareasPorHacer.pop(tareasPorHacer[index]);
-    //    return true;
-    //}
-    //return false;
 }
 
 
