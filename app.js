@@ -19,12 +19,10 @@ switch (comando) {
         let borrado = tareas.borrar(argv.descripcion);
         console.log(borrado);
         break;
-    case 'listar':
-        let listado = tareas.getLista();
-        for (let tarea of listado) {
-            console.log('=======POR HACER=========='.green);
-            console.log(tarea.descripcion);
-            console.log('Estado', tarea.completado);
-        }
+    case 'actualizar':
+        let actualizado = tareas.actualizar(argv.descripcion, argv.completado);
+        console.log(actualizado);
         break;
+    default:
+        console.log("Comando no reconocido");
 }
